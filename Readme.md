@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Aleksandr Schmidt](https://up.htmlacademy.ru/adaptive/23/user/1741743).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Бабченко](https://up.htmlacademy.ru/profession/frontender/11/adaptive/user/619357).
 
 ---
 
