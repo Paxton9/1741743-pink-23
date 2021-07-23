@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="source/css/style.css">
+  <link rel="stylesheet" href="/source/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
@@ -16,15 +16,16 @@
       <!-- header -->
 
   <header class="page-header">
-    <a class="page-header__logo logo">
-      <img src="source/img/logotypedesktop.svg" width="147" height="40" alt="Логотип приложения Pink">
-    </a>
+
     <nav>
+      <a class="page-header__logo">
+        <img src="/source/img/pink.png" width="147" height="40" alt="Логотип приложения Pink">
+      </a>
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="wrapper main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--current">
-            <a class="site-list__link" href="#">Главная</a>
+            <a class="site-list__link">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Фотографии</a>
@@ -84,26 +85,27 @@
       <!-- advantages -->
 
     <section class="advantages">
-      <h2>Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
+      <h2 class="visually-hidden">Наши преимущества</h2>
+      <p>Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
       <div class="advantages__wrapper">
         <ul class="advantages__list">
           <li class="advantages__item">
             <div class="advantages__image">
-              <img src="source/img/group1.png" width="186" height="382" alt="Телефон с фотографией мусорных контейнеров">
+              <img src="/source/img/group1.png" width="186" height="382" alt="Телефон с фотографией мусорных контейнеров">
             </div>
               <h3 class="advantages__title">Поднимает настроение</h3>
               <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="advantages__item">
             <div class="advantages__image">
-              <img src="source/img/group2.png" width="186" height="382" alt="Телефон с фотографией мусорных контейнеров в розовом цвете">
+              <img src="/source/img/group2.png" width="186" height="382" alt="Телефон с фотографией мусорных контейнеров в розовом цвете">
             </div>
               <h3 class="advantages__title">Меняет мир вокруг</h3>
               <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
           <li class="advantages__item">
             <div class="advantages__image">
-              <img src="source/img/group3.png" width="186" height="382" alt="телефон с фотографией Всем привет!">
+              <img src="/source/img/group3.png" width="186" height="382" alt="телефон с фотографией Всем привет!">
             </div>
               <h3 class="advantages__title">Заводит новых друзей</h3>
               <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
@@ -113,11 +115,11 @@
     </section>
         <!-- features -->
 
-    <!-- <section class="features">
+    <section class="features">
       <h2 class="features__title">Эффект на 24 часа!</h2>
       <p class="features__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
       <a class="features__link" href="#">Узнать больше об исследовании</a>
-    </section> -->
+    </section>
 
       <!-- reviews -->
 
@@ -155,39 +157,52 @@
 
         <!-- price -->
         <section class="price">
+          <h2 class="visually-hidden">Наши цены</h2>
           <div class="price__wrapper">
-            <div class="base">
-              <h3 class="base__title">База</h3>
-              <p class="base__price">1,99 USD</p>
-            </div>
-            <div class="standard">
-              <h3 class="standard__title">Стандард</h3>
-              <p class="standard__price">3,99 USD</p>
-            </div>
-            <div class="unlim">
-              <h3 class="unlim__title">Анлим</h3>
-              <p class="unlim__price">9,99 USD</p>
-            </div>
-            <table class="price__table">
+            <table class="price__table slider">
+              <tr class="table__head slider__list" >
+                <th></th>
+                <th class="base">
+                  <dl class="base__item slider__item">
+                    <dt class="base__title">База</dt>
+                    <dd class="base__price">1,99 USD</dd>
+                  </dl>
+                </th>
+                <th class="standard">
+                  <dl class="standard__item slider__item">
+                    <dt class="standard__title">Стандард</dt>
+                    <dd class="standard__price">3,99 USD</dd>
+                  </dl>
+                </th>
+                <th class="unlim">
+                  <dl class="unlim__item slider__item">
+                    <dt class="unlim__title">Анлим</dt>
+                    <dd class="unlim__price">9,99 USD</dd>
+                  </dl>
+                </th>
+              </tr>
               <tr>
                 <td>Розовый фильтр</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
               </tr>
               <tr>
                 <td>Смайлики</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Yes</td>
               </tr>
               <tr>
                 <td>Комментарии</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>No</td>
+                <td>No</td>
+                <td>Yes</td>
               </tr>
             </table>
+              <button class="slider__toggle slider__toggle--current" type="button">1</button>
+              <button class="slider__toggle" type="button">2</button>
+              <button class="slider__toggle" type="button">3</button>
           </div>
         </section>
 
@@ -196,15 +211,15 @@
         <section class="contacts">
           <h3 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h3>
           <div class="contacts__phone">
-            <h4>Звоните:</h4>
+            <b>Звоните:</b>
             <a href="tel:+78125556666">+7 (812) 555-66-66</a>
           </div>
           <div class="contacts__address">
-            <h4>Приезжайте в гости:</h4>
-            <a href="#">ул. Большая Конюшенная, 19/8</a>
+            <b>Приезжайте в гости:</b>
+            <address>ул. Большая Конюшенная, 19/8</address>
           </div>
           <div class="contacts__email">
-            <h4>Пишите:</h4>
+            <b>Пишите:</b>
             <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </div>
           <div class="maps">
@@ -215,9 +230,9 @@
           <!-- footer -->
 
         <footer class="page-footer">
-          <div class="page-footer__wrapper">
-          <div class="page-footer__logo logo">
-            <img src="source/img/logotypedesktop.svg" width="145" height="40" alt="Логотип приложения Pink">
+          <div class="wrapper page-footer__wrapper">
+          <div class="page-footer__logo">
+            <img src="/source/img/logotypedesktop.svg" width="145" height="40" alt="Логотип приложения Pink">
           </div>
           <div class="page-footer__socials socials">
             <ul class="social__list">
@@ -235,7 +250,7 @@
           <div class="page-footer__copyright copyright">
             <b class="copyright__text">Разработано:</b>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <img src="source/img/htmlacademy.svg" alt="" class="copyright__logo">
+              <img src="/source/img/htmlacademy.svg" alt="" class="copyright__logo">
             </a>
           </div>
         </div>
