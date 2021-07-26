@@ -16,7 +16,7 @@
       <!-- header -->
 
   <header class="page-header">
-    <a class="page-header__logo logo">
+    <a class="page-header__logo">
       <img src="/source/img/pink.png" width="147" height="40" alt="Логотип приложения Pink">
     </a>
     <nav>
@@ -24,10 +24,10 @@
       <div class="wrapper main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Главная</a>
+            <a class="site-list__link" href="index">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link site-list__item--current" href="catalog.html">Фотографии</a>
+            <a class="site-list__link site-list__item--current">Фотографии</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="form.html">Конкурс</a>
@@ -45,6 +45,126 @@
     </div>
 
     <section class="photos">
-      
+      <p>Взгляните на фотографии, которые выкладывают пользователи!
+        Видите, как не хватает ваших?</p>
+        <div class="photos__wrapper">
+          <blockquote class="panorama">
+          <img src="" alt="">
+          <cite>Анна</cite>
+          <p>Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <button class="heart" type="button"><span class="likes-number"></span></button>
+          </blockquote>
+          <ul class="photo__list">
+            <li>
+              <blockquote class="photo__item">
+                <img src="" alt="">
+                <cite>Левон</cite>
+                <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <button class="heart" type="button"><span class="likes-number"></span></button>
+                </blockquote>
+            </li>
+            <li>
+              <blockquote class="photo__item">
+                <img src="" alt="">
+                <cite>Антон</cite>
+                <p>Соседи будут рады!</p>
+                <button class="heart" type="button"><span class="likes-number"></span></button>
+                </blockquote>
+            </li>
+            <li>
+              <blockquote class="photo__item">
+                <img src="" alt="">
+                <cite>Борис</cite>
+                <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <button class="heart" type="button"><span class="likes-number"></span></button>
+                </blockquote>
+            </li>
+            <li>
+              <blockquote class="photo__item">
+                <img src="" alt="">
+                <cite>Сергей</cite>
+                <p>Самая кубанская в мире!</p>
+                <button class="heart" type="button"><span class="likes-number"></span></button>
+                </blockquote>
+            </li>
+            <li>
+              <blockquote class="photo__item">
+                <img src="" alt="">
+                <cite>Максим</cite>
+                <p>Где снег-то?</p>
+                <button class="heart" type="button"><span class="likes-number"></span></button>
+                </blockquote>
+            </li>
+            <li>
+              <blockquote class="photo__item">
+                <img src="" alt="">
+                <cite>Надежда</cite>
+                <p>Всем GM и взаимные лайки!</p>
+                <button class="heart" type="button"><span class="likes-number"></span></button>
+                </blockquote>
+            </li>
+          </ul>
+        </div>
     </section>
+
+    <div class="upload">
+      <div class="upload__wrapper">
+        <p>Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
+        <section class="upload__redactor">
+          <img src="" alt="">
+          <ul class="slider__list">
+            <li class="slider__item">
+              <div class="scale scale__size">
+                <label class="visually-hidden" for="size"></label>
+                <input type="range" id="size" name="size" step="1" min="0" max="100">
+              </div>
+            </li>
+            <li class="slider__item">
+              <div class="scale scale__fill">
+                <label class="visually-hidden" for="fill"></label>
+                <input type="range" id="fill" name="fill" step="1" min="0" max="100">
+              </div>
+            </li>
+            <li class="slider__item">
+              <div class="scale scale__contrast">
+                <label class="visually-hidden" for="contrast"></label>
+                <input type="range" id="contrast" name="contrast" step="1" min="0" max="100">
+              </div>
+            </li>
+          </ul>
+          <p>
+            <button class="post__button" type="button">Запостить</button>
+            <button class="cancel__button" type="button" disabled>Отмена</button>
+          </p>
+        </section>
+      </div>
+    </div>
   </main>
+  <footer class="page-footer">
+    <div class="wrapper page-footer__wrapper">
+    <div class="page-footer__logo">
+      <img src="/source/img/logotypedesktop.svg" width="145" height="40" alt="Логотип приложения Pink">
+    </div>
+    <div class="page-footer__socials">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Твиттере</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы на Ютубе</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано:</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="/source/img/htmlacademy.svg" alt="" class="copyright__logo">
+      </a>
+    </div>
+  </div>
+  </footer>
+</body>
+</html>

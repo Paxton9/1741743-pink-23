@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/source/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <title>Pink</title>
+</head>
+<body class="page__body">
+
+      <!-- header -->
+
+  <header class="page-header">
+    <nav>
+      <a class="page-header__logo">
+        <img src="/source/img/pink.png" width="147" height="40" alt="Логотип приложения Pink">
+      </a>
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="wrapper main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--current">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="page-main__wrapper">
+      <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <div class="form">
+        <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        <form class="catalog-form">
+          <label for="lastname">Фамилия:</label>
+          <input type="text" id="lastname" name="lastname" placeholder="Укажите фамилию *">
+          <label for="name">Имя:</label>
+          <input type="text" id="name" name="name" placeholder="Введите ваше имя *">
+          <label for="surname">Отчество:</label>
+          <input type="text" id="surname" name="surname" placeholder="Ну и отчество тоже">
+
+          <fieldset class="catalog-form__os">
+            <legend>С каким приложением путешествовали?</legend>
+            <label for="r1">Pink для iOS</label>
+            <input type="radio" id="r1" name="oc" value="ios">
+            <label for="r2">Pink на Android</label>
+            <input type="radio" id="r2" name="oc" value="android">
+            <label for="r3">Windows Phone</label>
+            <input type="radio" id="r3" name="oc" value="windows">
+          </fieldset>
+
+          <fieldset class="catalog-form__contacts-info">
+            <legend>контактная информация</legend>
+            <input type="tel" name="phone-number" id="phone" placeholder="Номер, пожалуйста">
+            <label for="phone">Номер телефона</label>
+            <input type="email" id="mail" name="mail" placeholder="Введите почту *">
+            <label for="mail"></label>
+          </fieldset>
+
+          <fieldset class="catalog-form__achieve">
+            <legend>Ващи безбашенные достижения в путеществии</legend>
+            <input type="checkbox" id="cb1" name="" checked>
+            <label for="cb1">Сделал селфи с акулой</label>
+            <input type="checkbox" id="cb2" name="" checked>
+            <label for="cb2">Обгорел на пляже</label>
+            <input type="checkbox" id="cb3" name="">
+            <label for="cb3">Видел Чака Норриса</label>
+            <input type="checkbox" id="cb4" name="">
+            <label for="cb4">Накупил сувениров</label>
+            <input type="checkbox" id="cb5" name="" checked>
+            <label for="cb5">Удержал башню</label>
+            <input type="checkbox" id="cb6" name="">
+            <label for="cb6">Разгромил отель</label>
+          </fieldset>
+          <fieldset>
+            <legend>Опишите свои эмоции</legend>
+            <label for="text"></label>
+            <textarea name="" id="text" cols="100" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <button class="form__button" type="submit">Отправить форму</button>
+          <p><span>*</span> — обязательные для заполнения поля</p>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="wrapper page-footer__wrapper">
+    <div class="page-footer__logo">
+      <img src="/source/img/logotypedesktop.svg" width="145" height="40" alt="Логотип приложения Pink">
+    </div>
+    <div class="page-footer__socials">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Твиттере</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы на Ютубе</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано:</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="/source/img/htmlacademy.svg" alt="" class="copyright__logo">
+      </a>
+    </div>
+  </div>
+  </footer>
+  <div class="popup popup__failure">
+    <b>Что-то пошло не так!</b>
+    <p сlass="popup__text">Проверьте поля, выделенные красным,
+      скорее всего вы забыли их заполнить</p>
+      <button class="popup__button" type="button">Ок</button>
+  </div>
+  <div class="popup popup_success">
+    <b>Ваша заявка отправлена</b>
+    <p class="popup__text">Спасибо за ваше участие, ваша заявка
+      уже поступила к нам. В ближайшее
+      время мы рассмотрим ее и
+      оповестим вас.</p>
+    <button class="popup__button" type="button">Закрыть окно</button>
+  </div>
+</body>
+</html>
