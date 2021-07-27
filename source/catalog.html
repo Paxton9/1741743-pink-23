@@ -18,10 +18,10 @@
 <body class="page__body">
   <!-- header -->
   <header class="page-header">
-    <a class="page-header__logo logo">
+    <a class="page-header__logo">
       <img src="img/pink.png" width="147" height="40" alt="Логотип приложения Pink">
     </a>
-    <nav>
+    <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="wrapper main-nav__wrapper">
         <ul class="main-nav__list site-list">
@@ -113,30 +113,29 @@
         <p>Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
         <section class="upload__redactor">
           <img src="" alt="">
-          <ul class="slider__list">
-            <li class="slider__item">
-              <div class="scale scale__size">
-                <label class="visually-hidden" for="size"></label>
-                <input type="range" id="size" name="size" step="1" min="0" max="100">
-              </div>
-            </li>
-            <li class="slider__item">
-              <div class="scale scale__fill">
-                <label class="visually-hidden" for="fill"></label>
-                <input type="range" id="fill" name="fill" step="1" min="0" max="100">
-              </div>
-            </li>
-            <li class="slider__item">
-              <div class="scale scale__contrast">
-                <label class="visually-hidden" for="contrast"></label>
-                <input type="range" id="contrast" name="contrast" step="1" min="0" max="100">
-              </div>
-            </li>
-          </ul>
-          <p>
-            <button class="post__button" type="button">Запостить</button>
-            <button class="cancel__button" type="button" disabled>Отмена</button>
-          </p>
+          <form class="catalog__form slider__list">
+            <fieldset class="scale scale__size slider__item">
+              <label class="visually-hidden" for="size"></label>
+              <input type="range" id="size" name="size" step="1" min="0" max="100">
+            </fieldset>
+
+            <fieldset class="scale scale__fill slider__item">
+              <label class="visually-hidden" for="fill"></label>
+              <input type="range" id="fill" name="fill" step="1" min="0" max="100">
+            </fieldset>
+
+            <fieldset class="scale scale__contrast slider__item">
+              <label class="visually-hidden" for="contrast"></label>
+              <input type="range" id="contrast" name="contrast" step="1" min="0" max="100">
+            </fieldset>
+
+            <p>
+              <button class="post__button" type="submit">Запостить</button>
+              <button class="cancel__button" type="button" disabled>Отмена</button>
+            </p>
+
+          </form>
+
         </section>
       </div>
     </div>
