@@ -9,5 +9,18 @@
 }
 
 .page-header__logo {
+  position: relative;
   margin-left: 20px;
+  margin-bottom: 21px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: #000000;
+    bottom: -21px;
+    left: -20px;
+  }
 }
+
