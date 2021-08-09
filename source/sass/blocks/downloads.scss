@@ -1,11 +1,12 @@
 .downloads {
-  font-family: "Opem sans", Arial, sans-serif;
+  font-family: "Opem sans", "Arial", sans-serif;
   padding: 28px 0 38px 0;
   min-width: 280px;
   background-color: #1d2631;
   color: #ffffff;
   display: flex;
   flex-direction: column;
+  margin-top: -399px;
 
   a {
     text-decoration: none;
@@ -28,6 +29,13 @@
   line-height: 120%;
   text-align: center;
   padding-left: 20px;
+  z-index: 2;
+}
+
+.downloads__app-image {
+  width: 320px;
+  height: 286px;
+  z-index: 2;
 }
 
 .downloads__button {
@@ -37,12 +45,15 @@
   border: 3px solid #ffffff;
   padding: 15px 40px;
   align-self: flex-start;
-  margin: 30px 20px;
+  margin-left: 20px;
+  margin-top: 57px;
+  margin-bottom: 37px;
 
   &:hover {
     background-color: #ffffff;
-    color: #D22856;
+    color: #d22856;
   }
+
   &:active {
     background-color: #ffffff;
     color: rgba(209, 41, 87, 0.3);
