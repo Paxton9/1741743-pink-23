@@ -1,0 +1,70 @@
+.downloads {
+  font-family: "Opem sans", Arial, sans-serif;
+  padding: 28px 0 38px 0;
+  min-width: 280px;
+  background-color: #1d2631;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 29px;
+  }
+
+  img {
+    padding: 28px 0;
+  }
+}
+
+.downloads__slogan {
+  width: 280px;
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  padding-left: 20px;
+}
+
+.downloads__button {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  border: 3px solid #ffffff;
+  padding: 15px 40px;
+  align-self: flex-start;
+  margin: 30px 20px;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #D22856;
+  }
+  &:active {
+    background-color: #ffffff;
+    color: rgba(209, 41, 87, 0.3);
+  }
+}
+
+.downloads__apps {
+  margin: 0 auto;
+}
+
+.downloads__apps a {
+  margin-right: 35px;
+}
+
+.downloads__apps a:last-child {
+  margin-right: 0;
+}
+
+.downloads__determine {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 30px;
+}
