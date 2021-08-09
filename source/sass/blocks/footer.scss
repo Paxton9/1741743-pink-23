@@ -1,0 +1,43 @@
+.page-footer__wrapper {
+  margin: 0 auto;
+}
+
+.page-footer__logo {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.page-footer__logo svg:hover {
+  fill: #D22856;
+}
+
+.page-footer__logo svg:active {
+  fill: #283645;
+  opacity: 0.3;
+}
+
+.page-footer__copyright {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright__text {
+  margin: 0;
+  padding: 0;
+  padding-right: 15px;
+}
+
+.copyright__link svg:hover {
+  fill: #283645;
+}
+
+.copyright__link svg:active {
+  fill: rgba(40, 54, 69, 0.3);
+}
