@@ -22,10 +22,16 @@
   <header class="page-header">
 
     <nav class="main-nav main-nav--closed">
-      <a class="page-header__logo">
-        <img src="img/pink.png" width="74" height="23" alt="Логотип приложения Pink">
-      </a>
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__item">
+        <a class="page-header__logo">
+          <img src="img/pink.png" width="74" height="23" alt="Логотип приложения Pink">
+        </a>
+        <a class="page-header__logo--tablet">
+          <img src="img/logotype-white-tablet.png" width="145" height="40" alt="Логотип приложения Pink">
+        </a>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      </div>
+
       <div class="wrapper main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--current">
@@ -50,7 +56,7 @@
     <h1 class="visually-hidden"> Приложение Pink</h1>
       <!-- downloads -->
       <section class="downloads">
-        <p class="downloads__slogan">Взгляните на жизнь иначе!</p>
+        <p class="downloads__slogan">Взгляните<br> на жизнь<br> иначе!</p>
         <div class="downloads__app-image">
           <img src="img/group-phone.png" width="320" height="286" alt="">
         </div>
@@ -291,9 +297,8 @@
         </div>
       </div>
     </footer>
-
-
 </div>
+<script src="js/open-menu.js"></script>
 </body>
 
 </html>

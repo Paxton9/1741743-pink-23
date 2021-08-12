@@ -18,6 +18,27 @@
   img {
     padding: 28px 0;
   }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    background-image: url("../img/tablet-phone.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 660px;
+    height: 545px;
+    background-color: transparent;
+    margin-top: -612px;
+
+    display: grid;
+    grid-template-rows: min-content min-content min-content min-content;
+    grid-template-columns: 300px;
+    justify-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 940px;
+  }
 }
 
 .downloads__slogan {
@@ -30,20 +51,41 @@
   text-align: center;
   padding-left: 20px;
   z-index: 2;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    br {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .downloads__app-image {
   width: 320px;
   height: 286px;
   z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
+
 
 .downloads__button {
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
   border: 3px solid #ffffff;
-  padding: 15px 40px;
+  padding: 15px 44px;
   align-self: flex-start;
   margin-left: 20px;
   margin-top: 57px;
@@ -58,10 +100,18 @@
     background-color: #ffffff;
     color: rgba(209, 41, 87, 0.3);
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 16px 43px;
+  }
 }
 
 .downloads__apps {
-  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+  }
 }
 
 .downloads__apps a {
