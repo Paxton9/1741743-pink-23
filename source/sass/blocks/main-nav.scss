@@ -13,7 +13,9 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: min-content 1fr;
-    column-gap: 100px;
+    column-gap: 13%;
+    padding-left: 96px;
+    padding-top: 21px;
   }
 }
 
@@ -72,7 +74,7 @@
     font-size: 18px;
     line-height: 18px;
     text-transform: capitalize;
-    padding: 20px 10px;
+    padding: 20px 0;
   }
 }
 
@@ -124,8 +126,8 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 49px;
+    grid-template-columns: min-content min-content min-content 1fr;
+    column-gap: 8%;
   }
 }
 

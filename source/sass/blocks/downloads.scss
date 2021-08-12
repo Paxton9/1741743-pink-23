@@ -38,6 +38,15 @@
 
   @media (min-width: $desktop-width) {
     min-width: 940px;
+    position: relative;
+    background-image: url("../img/desktop-phone.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 660px;
+    height: 545px;
+    background-color: transparent;
+    margin-top: -612px;
   }
 }
 
