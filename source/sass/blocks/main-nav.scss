@@ -45,6 +45,7 @@
 }
 
 .site-list__item {
+  position: relative;
   background-color: #283645;
   border-bottom: 1px solid #000000;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
@@ -55,6 +56,16 @@
     background-color: transparent;
     border: none;
     justify-self: flex-start;
+
+    &--current::before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      background-color: #ffffff;
+    }
   }
 }
 
