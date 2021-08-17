@@ -7,7 +7,8 @@ navToggle.addEventListener("click", function() {
     navMain.classList.remove("main-nav--closed");
     navMain.classList.add("main-nav--opened");
   } else {
-    navMain.classList.add("main-nav-closed");
     navMain.classList.remove("main-nav--opened");
+    navMain.classList.add("main-nav--closed");
+
   }
 });

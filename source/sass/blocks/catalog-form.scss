@@ -16,6 +16,16 @@
   text-align: center;
 }
 
+.catalog-form input {
+  &:hover + label::before {
+    border: 2px solid #283645;
+  }
+
+  &:focus + label::before {
+    border: 2px solid #d22856;
+  }
+}
+
 
 .fullname {
   display: flex;

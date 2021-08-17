@@ -47,7 +47,25 @@
 
 .panorama {
   width: 100%;
-  margin: 0%;
+  margin: 0;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "панорама дня";
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #D22856;
+    width: 140px;
+    padding: 6px 0;
+    right: 20px;
+  }
+
+  img {
+    width: 100%;
+  }
 }
 
 .photos__item p {

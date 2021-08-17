@@ -33,18 +33,12 @@
   min-width: 320px;
 
   @media (min-width: $tablet-width) {
-    min-width: 660px;
     width: 100%;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
   }
-}
-
-.catalog__wrapper {
-  margin: 0 auto;
-  padding: 20px;
 }
 
 img {
