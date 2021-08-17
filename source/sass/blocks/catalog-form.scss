@@ -5,24 +5,24 @@
 
 .catalog-form label {
   text-transform: uppercase;
-  color: #D22856;
+  color: $pink;
 }
 
 .catalog-form legend {
   text-transform: uppercase;
-  color: #D22856;
-  background-color: #f2f2f2;
+  color: $pink;
+  background-color: $grey;
   padding-top: 42px;
   text-align: center;
 }
 
 .catalog-form input {
   &:hover + label::before {
-    border: 2px solid #283645;
+    border: 2px solid $dark-blue;
   }
 
   &:focus + label::before {
-    border: 2px solid #d22856;
+    border: 2px solid $pink;
   }
 }
 
@@ -80,13 +80,13 @@
   flex-direction: column;
   align-items: center;
   border: none;
-  background-color: #F2F2F2;
+  background-color: $grey;
 }
 
 .catalog-form__os label {
   position: relative;
   text-transform: capitalize;
-  color: #283645;
+  color: $dark-blue;
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
@@ -99,8 +99,8 @@
     position: absolute;
     width: 33px;
     height: 33px;
-    background-color: #fff;
-    border: 2px solid #E5E5E5;
+    background-color: $white;
+    border: 2px solid $checkbox-border;
     border-radius: 50%;
     left: -63px;
     top: -8px;
@@ -112,7 +112,7 @@
     position: absolute;
     width: 13px;
     height: 13px;
-    background-color: #D22856;
+    background-color: $pink;
     border-radius: 50%;
     left: -51px;
     top: 4px;
@@ -124,9 +124,9 @@
     position: absolute;
     width: 31px;
     height: 31px;
-    border: 2px solid #E5E5E5;
+    border: 2px solid $checkbox-border;
     border-radius: 1px;
-    background-color: #fff;
+    background-color: $white;
     left: -55px;
     top: -9px;
     cursor: pointer;
@@ -144,7 +144,6 @@
     top: 1px;
     cursor: pointer;
   }
-
 }
 
 
@@ -155,13 +154,13 @@
   border: none;
   align-items: center;
   margin: 0 auto;
-  background-color: #F2F2F2;
+  background-color: $grey;
 }
 
 .catalog-form__achieve label {
   position: relative;
   text-transform: capitalize;
-  color: #283645;
+  color: $dark-blue;
 }
 
 .catalog-form__contacts-info {
@@ -182,7 +181,7 @@
     font-size: 18px;
     line-height: 30px;
     padding: 10px;
-    border: 2px solid #E5E5E5;
+    border: 2px solid $checkbox-border;
     border-radius: 1px;
     margin-top: 15px;
     margin-bottom: 30px;
@@ -193,24 +192,26 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-  color:#fff;
-  background-color: #2AAB6D;
-  border: 2px solid #2AAB6D;
+  color: $white;
+  background-color: $green-button;
+  border: 2px solid $green-button;
   border-radius: 1px;
   padding: 13px 44px;
   text-transform: uppercase;
 
   &:hover {
-    background: #1C9B5E;
-    border: 2px solid #1C9B5E;
+    background: $green-button__hover;
+    border: 2px solid $green-button__hover;
   }
+
   &:active span {
-    background: #1C9B5E;
-    border: 2px solid #1C9B5E;
+    background: $green-button__hover;
+    border: 2px solid $green-button__hover;
     opacity: 0.3;
   }
+
   &:disabled {
-    background: #E5E5E5;
-    border: 2px solid #E5E5E5;
+    background: $checkbox-border;
+    border: 2px solid $checkbox-border;
   }
 }

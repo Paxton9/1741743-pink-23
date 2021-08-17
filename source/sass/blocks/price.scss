@@ -1,7 +1,8 @@
 .price {
-  background-color: #f2f2f2;
+  background-color: $grey;
   padding: 50px 0;
-  clip-path: polygon(0 7%, 100% 0%, 100% 100%, 0% 100%);
+  padding-top: 120px;
+  clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
@@ -9,7 +10,139 @@
 }
 
 .price__table {
+  border-collapse: collapse;
   th {
-    color: #ffffff;
+    color: $white;
+    background-color: $dark-blue;
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 13px;
+    padding-bottom: 20px;
+
   }
+
+  th:first-child {
+    background-color: transparent;
+  }
+
+  td {
+    position: relative;
+    border: 2px solid #E5E5E5;
+    text-align: center;
+    background-color: $white;
+    padding: 13px 0;
+    width: 232px;
+  }
+
+  dl {
+    margin: 0;
+  }
+}
+
+.base__price,
+.standard__price,
+.unlim__price {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.base {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 98px;
+    background-color: #f2f2f2;
+    right: -1px;
+    top: -1px;
+  }
+}
+
+.standard {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 98px;
+    background-color: #f2f2f2;
+    right: -1px;
+    top: -1px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "хит";
+    font-weight: 300;
+    color: $white;
+    text-transform: uppercase;
+    background-color: $pink;
+    width: 102px;
+    height: 24px;
+    top: 16px;
+    left: -23px;
+    transform: rotate(-45deg);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(23% 0%, 77% 0%, 100% 100%, 0% 100%);
+
+  }
+}
+
+.pink-filter td::before,
+.smiles td::before,
+.comments td::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/yes.jpg");
+  background-repeat: no-repeat;
+  width: 31px;
+  height: 21px;
+  top: 16px;
+  left: 44%;
+}
+
+td:first-child::before {
+  display: none;
+}
+
+.smiles td:nth-child(2)::before {
+  display: none;
+}
+
+.comments td:nth-child(2)::before,
+.comments td:nth-child(3)::before {
+  display: none;
+}
+
+.smiles td::after,
+.comments td::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/no.jpg");
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 27px;
+  top: 16px;
+  left: 44%;
+}
+
+.smiles td:nth-child(3)::after,
+.smiles td:nth-child(4)::after {
+  display: none;
+}
+
+.comments td:last-child::after {
+  display: none;
+}
+
+td:first-child::after {
+  display: none;
 }
