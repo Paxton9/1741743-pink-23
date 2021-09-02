@@ -22,11 +22,11 @@
     <nav class="main-nav main-nav--closed">
       <div class="main-nav__item">
         <a class="page-header__logo">
-          <img src="img/pink.png" width="74" height="23" alt="Логотип приложения Pink">
-        </a>
-        <a class="page-header__logo--tablet">
-          <img src="img/logotype-white-tablet.png" width="145" height="40" alt="Логотип приложения Pink">
-        </a>
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/logotype-white-tablet.svg">
+            <img src="img/pink.svg" width="74" height="23" alt="Логотип приложения Pink">
+          </picture>
+          </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
 
@@ -129,7 +129,11 @@
           </li>
           <li class="advantages__item">
             <div class="advantages__image">
-              <img src="img/group3.png" width="186" height="382" alt="телефон с фотографией Всем привет!">
+                <picture>
+                  <source media="(min-width: 650px)" srcset="img/tablet.png">
+                  <img src="img/group3.png" width="186" height="382" alt="телефон с фотографией Всем привет!">
+                </picture>
+
             </div>
             <h3 class="advantages__title">Заводит новых друзей</h3>
             <p class="advantages__description">Ставьте лайки, комментируйте,<br> делитесь фотографиями с друзьями и <br>заводите новых</p>
@@ -236,20 +240,23 @@
     </section>
     <!-- contacts -->
     <section class="contacts">
-      <h3 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h3>
-      <div class="contacts__phone">
-        <b>Звоните:</b>
-        <br>
-        <a href="tel:+78125556666">+7 (812) 555-66-66</a>
-      </div>
-      <div class="contacts__address">
-        <b>Приезжайте в гости:</b>
-        <address>ул. Большая Конюшенная, 19/8</address>
-      </div>
-      <div class="contacts__email">
-        <b>Пишите:</b>
-        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-      </div>
+      <h3 class="contacts__title">Остались вопросы? <br>Свяжитесь с нами!</h3>
+      <div class="contacts__info">
+        <div class="contacts__phone">
+          <b>Звоните:</b>
+          <br>
+          <a href="tel:+78125556666">+7 (812) 555-66-66</a>
+        </div>
+        <div class="contacts__email">
+          <b>Пишите:</b>
+          <br>
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        </div>
+        <div class="contacts__address">
+          <b>Приезжайте в гости:</b>
+          <address>ул. Большая Конюшенная, 19/8</address>
+        </div>
       <div class="maps">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2see!4v1627959933419!5m2!1sru!2see" width="320" height="200"  allowfullscreen="" loading="lazy"></iframe>
       </div>

@@ -1,5 +1,6 @@
 .features {
   display: none;
+  box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {
