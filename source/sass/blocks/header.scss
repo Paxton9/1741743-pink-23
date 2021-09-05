@@ -21,25 +21,15 @@
   }
 }
 
-.page-header__logo {
-  display: block;
-
-  &--tablet {
-    display: none;
-  }
+.page-header__logo img {
 
   @media (min-width: $tablet-width) {
-    display: none;
-
-    &--tablet {
-      display: block;
-    }
+    width: 145px;
+    height: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    &--tablet {
-      width: 147px;
-      height: 40px;
-    }
+    width: 147px;
+    height: 40px;
   }
 }

@@ -18,7 +18,7 @@
 
   <!-- header -->
   <div class="catalog__wrapper">
-    <header class="page-header">
+    <header class="page-header catalog-form__header">
 
       <nav class="main-nav main-nav--closed">
         <div class="main-nav__item">
@@ -56,39 +56,53 @@
         <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           Пожалуйста, заполните форму ниже:</p>
         <form class="catalog-form" method="GET" action="https://echo.htmlacademy.ru">
-          <fieldset class="fullname">
-            <label for="lastname">Фамилия:</label>
-            <input type="text" id="lastname" name="lastname" placeholder="Укажите фамилию *" required>
-            <label for="name">Имя:</label>
-            <input type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
-            <label for="surname">Отчество:</label>
-            <input type="text" id="surname" name="surname" placeholder="Ну и отчество тоже">
-          </fieldset>
+            <fieldset class="catalog-form__fullname">
+              <div class="catalog-form__lastname">
+                <label for="lastname">Фамилия:</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Укажите фамилию *" required>
+              </div>
+              <div class="catalog-form__name">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
+              </div>
+              <div class="catalog-form__surname">
+                <label for="surname">Отчество:</label>
+                <input type="text" id="surname" name="surname" placeholder="Ну и отчество тоже">
+              </div>
+            </fieldset>
 
-          <fieldset class="catalog-form__os">
-            <legend>С каким приложением путешествовали?</legend>
-            <ul class="input-radio__list">
-              <li class="input-radio__item">
-                <input class="visually-hidden filter__input--radio" type="radio" id="r1" name="oc" value="ios">
-                <label for="r1">Pink для iOS</label>
-              </li>
-              <li class="input-radio__item">
-                <input class="visually-hidden filter__input--radio" type="radio" id="r2" name="oc" value="android">
-                <label for="r2">Pink на Android</label>
-              </li>
-              <li class="input-radio__item">
-                <input class="visually-hidden filter__input--radio" type="radio" id="r3" name="oc" value="windows">
-                <label for="r3">Windows Phone</label>
-              </li>
-            </ul>
-          </fieldset>
+            <fieldset class="catalog-form__os">
+              <legend>С каким приложением путешествовали?</legend>
+              <ul class="input-radio__list">
+                <li class="input-radio__item">
+                  <input class="visually-hidden filter__input--radio" type="radio" id="r1" name="oc" value="ios">
+                  <label for="r1">Pink для iOS</label>
+                </li>
+                <li class="input-radio__item">
+                  <input class="visually-hidden filter__input--radio" type="radio" id="r2" name="oc" value="android">
+                  <label for="r2">Pink на Android</label>
+                </li>
+                <li class="input-radio__item">
+                  <input class="visually-hidden filter__input--radio" type="radio" id="r3" name="oc" value="windows">
+                  <label for="r3">Windows Phone</label>
+                </li>
+              </ul>
+            </fieldset>
+
 
           <fieldset class="catalog-form__contacts-info">
             <legend>контактная информация</legend>
-            <label for="phone">Номер телефона</label>
-            <input type="tel" name="phone-number" id="phone" placeholder="Номер, пожалуйста">
-            <label for="mail">Адрес почты</label>
-            <input type="email" id="mail" name="mail" placeholder="Введите почту *" required>
+
+            <div class="catalog-form__input-container catalog-form__input-container--phone">
+              <label class="catalog-form__contacts-info--phone" for="phone">Номер телефона</label>
+              <input class="catalog-form__contacts-info--tel" type="tel" name="phone-number" id="phone" placeholder="Номер, пожалуйста">
+            </div>
+
+            <div class="catalog-form__input-container catalog-form__input-container--email">
+              <label class="catalog-form__contacts-info--phone" for="mail">Адрес почты</label>
+              <input class="catalog-form__contacts-info--mail" type="email" id="mail" name="mail" placeholder="Введите почту *" required>
+            </div>
+
 
           </fieldset>
 
@@ -122,14 +136,14 @@
             </ul>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="catalog-form__textarea">
             <legend>Опишите свои эмоции</legend>
             <label for="text"></label>
             <textarea name="" id="text" cols="100" rows="5"
               placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
-          <button class="form__button" type="submit"><span>Отправить форму</span></button>
-          <p><span class="star">*</span> — обязательные для заполнения поля</p>
+          <button class="catalog-form__button" type="submit"><span>Отправить форму</span></button>
+          <p class="catalog-form__strong"><span class="star">*</span> — обязательные для заполнения поля</p>
         </form>
       </div>
     </div>
