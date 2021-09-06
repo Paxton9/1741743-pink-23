@@ -119,6 +119,17 @@
   background-color: transparent;
   z-index: 10;
 
+  &:hover::before {
+    background-color: $pink;
+    box-shadow: 0 10px 0 0 $pink, 0 20px 0 0 $pink;
+  }
+
+  &:active::before {
+    background-color: $pink;
+    box-shadow: 0 10px 0 0 $pink, 0 20px 0 0 $pink;
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     top: 45px;
   }
@@ -137,19 +148,6 @@
   height: 3px;
   background-color: $white;
   box-shadow: 0 10px 0 0 $white, 0 20px 0 0 $white;
-}
-
-.main-nav__toggle {
-  &:hover::before {
-    background-color: $pink;
-    box-shadow: 0 10px 0 0 $pink, 0 20px 0 0 $pink;
-  }
-
-  &:active::before {
-    background-color: $pink;
-    box-shadow: 0 10px 0 0 $pink, 0 20px 0 0 $pink;
-    opacity: 0.3;
-  }
 }
 
 .main-nav--closed .site-list {
