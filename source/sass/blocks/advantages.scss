@@ -40,7 +40,8 @@
   margin: 0;
   padding: 0 20px;
   background-color: $grey;
-  padding-top: 60px;
+  padding-top: 90px;
+  clip-path: polygon(0 5%, 100% 0, 100% 94%, 0 94%);
 
   &::before {
     position: absolute;
@@ -59,6 +60,7 @@
     flex-direction: column;
     align-items: flex-end;
     text-align: left;
+    clip-path: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -66,13 +68,16 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding-top: 40px;
+    clip-path: none;
   }
 }
 
 .advantages__text {
-  position: relative;
-  top: -91px;
-  left: 25px;
+  @media (min-width: $desktop-width) {
+    position: relative;
+    top: -91px;
+    left: 25px;
+  }
 }
 
 
@@ -133,9 +138,16 @@
   padding: 0;
   margin: 0;
   position: relative;
-  top: -69px;
-  left: 80px;
-  padding-right: 9px;
+
+  @media (min-width: $tablet-width) {
+    position: unset;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -69px;
+    left: 80px;
+    padding-right: 9px;
+  }
 }
 
 .advantages__rectangle {

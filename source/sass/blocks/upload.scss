@@ -194,3 +194,11 @@
     opacity: 0.3;
   }
 }
+
+.upload__slogan {
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

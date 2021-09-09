@@ -32,3 +32,15 @@
     height: 40px;
   }
 }
+
+.catalog-page__header {
+  height: 230px;
+
+  @media (min-width: $tablet-width) {
+    height: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 395px;
+  }
+}

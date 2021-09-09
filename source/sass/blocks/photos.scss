@@ -13,8 +13,8 @@
     font-size: 50px;
     line-height: 68px;
     text-align: center;
-    top: 250px;
-    left: 32%;
+    top: 176px;
+    left: 23%;
   }
 }
 
@@ -22,6 +22,10 @@
 .photos {
   background-color: $white;
   padding-top: 54px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 91px;
+  }
 }
 
 .photos__slogan {
@@ -30,6 +34,13 @@
   line-height: 30px;
   margin: 0;
   margin-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 77px;
+  }
 }
 
 .photos__list {
@@ -93,6 +104,8 @@
     position: absolute;
     content: "панорама дня";
     font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
     text-align: center;
     text-transform: uppercase;
     color: $white;

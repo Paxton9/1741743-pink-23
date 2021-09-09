@@ -18,15 +18,16 @@
 <body class="page__body">
   <div class="wrapper">
   <!-- header -->
-  <header class="page-header">
+  <header class="page-header catalog-page__header">
 
     <nav class="main-nav main-nav--closed">
       <div class="main-nav__item">
         <a class="page-header__logo" href="index.html">
-          <img src="img/pink.png" width="74" height="23" alt="Логотип приложения Pink">
-        </a>
-        <a class="page-header__logo--tablet" href="index.html">
-          <img src="img/logotype-white-tablet.png" width="145" height="40" alt="Логотип приложения Pink" >
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logotype-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg">
+            <img src="img/pink.svg" width="74" height="23" alt="Логотип приложения Pink">
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
@@ -52,7 +53,7 @@
   <main class="catalog-page">
       <h1 class="catalog-page__title">Фотографии <br>пользователей</h1>
     <section class="photos">
-      <p class="photos__slogan">Взгляните на фотографии, которые выкладывают пользователи!
+      <p class="photos__slogan">Взгляните на фотографии, которые выкладывают <br>пользователи!
         Видите, как не хватает ваших?</p>
       <div class="photos__wrapper">
         <blockquote class="photos__panorama photos__item">
@@ -166,7 +167,7 @@
     </section>
     <div class="upload">
       <div class="upload__wrapper">
-        <p>Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="upload__slogan">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
         <section class="upload__redactor">
           <source media="(min-width: 1200px)" srcset="img/photo-7-desktop.jpg">
           <source media="(min-width: 660px)" srcset="img/photo-7-desktop.jpg">
