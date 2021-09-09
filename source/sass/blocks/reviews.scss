@@ -4,33 +4,32 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-}
 
-.reviews__author {
-  margin: 0;
-  padding: 0;
+  &__author {
+    margin: 0;
+    padding: 0;
 
-  &--name {
+    &--name {
+      font-family: "Open Sans", "Arial", sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 30px;
+      text-transform: none;
+    }
+  }
+
+  &__text {
     font-family: "Open Sans", "Arial", sans-serif;
-    font-weight: bold;
-    font-size: 18px;
+    font-weight: normal;
+    font-size: 14px;
     line-height: 30px;
-    text-transform: none;
+  }
+
+  &__prev,
+  &__next {
+    display: none;
   }
 }
-
-.reviews__text {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 30px;
-}
-
-.reviews__prev,
-.reviews__next {
-  display: none;
-}
-
 
 .slider__toggle {
   border: none;

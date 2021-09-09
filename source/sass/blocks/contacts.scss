@@ -14,99 +14,99 @@
   address {
     color: $pink;
   }
-}
 
-.contacts__info {
-  &--phone {
-    @media (min-width: $tablet-width) {
-      justify-self: flex-end;
-    }
+  &__info {
+    &--phone {
+      @media (min-width: $tablet-width) {
+        justify-self: flex-end;
+      }
 
-    @media (min-width: $desktop-width) {
-      grid-column-start: 1;
+      @media (min-width: $desktop-width) {
+        grid-column-start: 1;
 
-      a {
-        display: block;
-        margin-top: 35px;
+        a {
+          display: block;
+          margin-top: 35px;
+        }
       }
     }
-  }
 
-  &--address {
-    @media (min-width: $tablet-width) {
-      grid-row-start: 2;
-      grid-column-start: 2;
-    }
+    &--address {
+      @media (min-width: $tablet-width) {
+        grid-row-start: 2;
+        grid-column-start: 2;
+      }
 
-    @media (min-width: $desktop-width) {
-      grid-column-start: 2;
-      grid-row-start: 1;
+      @media (min-width: $desktop-width) {
+        grid-column-start: 2;
+        grid-row-start: 1;
 
-      address {
-        margin-top: 35px;
+        address {
+          margin-top: 35px;
+        }
       }
     }
-  }
 
-  &--email {
-    margin-bottom: 30px;
+    &--email {
+      margin-bottom: 30px;
 
-    @media (min-width: $tablet-width) {
-      grid-column-start: 3;
-      justify-self: flex-start;
-    }
+      @media (min-width: $tablet-width) {
+        grid-column-start: 3;
+        justify-self: flex-start;
+      }
 
-    @media (min-width: $desktop-width) {
-      grid-column-start: 3;
+      @media (min-width: $desktop-width) {
+        grid-column-start: 3;
 
-      a {
-        margin-top: 35px;
-        display: block;
+        a {
+          margin-top: 35px;
+          display: block;
+        }
       }
     }
+
+    &--phone,
+    &--address {
+      margin-bottom: 35px;
+    }
+
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 
-  &--phone,
-  &--address {
-    margin-bottom: 35px;
+  &__title {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 120%;
+
+    @media (min-width: $desktop-width) {
+      font-size: 50px;
+      line-height: 68px;
+    }
   }
 
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  &__phone a,
+  &__address,
+  &__email a {
+    &:hover {
+      color: $dark-blue;
+    }
+
+    &:active {
+      color: $dark-blue;
+      opacity: 0.3;
+    }
+  }
+
+  &__maps {
+    clip-path: polygon(100% 0, 100% 99%, 0 100%, 0 0, 50% 17%);
+
+    iframe {
+      width: 660px;
+      height: 374px;
+    }
   }
 }
 
-.contacts__title {
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 120%;
-
-  @media (min-width: $desktop-width) {
-    font-size: 50px;
-    line-height: 68px;
-  }
-}
-
-
-.contacts__phone a,
-.contacts__address address,
-.contacts__email a {
-  &:hover {
-    color: $dark-blue;
-  }
-
-  &:active {
-    color: $dark-blue;
-    opacity: 0.3;
-  }
-}
-
-.maps {
-  clip-path: polygon(100% 0, 100% 99%, 0 100%, 0 0, 50% 17%);
-}
-
-.maps iframe {
-  width: 660px;
-  height: 374px;
-}

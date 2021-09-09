@@ -49,97 +49,97 @@
     background-color: transparent;
     margin-top: -612px;
   }
-}
 
-.downloads__slogan {
-  width: 280px;
-  padding: 0;
-  margin: 0;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 120%;
-  text-align: center;
-  padding-left: 20px;
-  z-index: 2;
+  &__slogan {
+    width: 280px;
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    padding-left: 20px;
+    z-index: 2;
 
-  br {
-    display: none;
-  }
-
-  @media (min-width: $tablet-width) {
     br {
-      display: block;
+      display: none;
     }
 
+    @media (min-width: $tablet-width) {
+      br {
+        display: block;
+      }
+
+      font-weight: 300;
+      font-size: 40px;
+      line-height: 120%;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-weight: 300;
+      font-size: 50px;
+      line-height: 68px;
+    }
+  }
+
+  &__app-image {
+    width: 320px;
+    height: 286px;
+    z-index: 2;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &__button {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    border: 3px solid $white;
+    padding: 15px 44px;
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-top: 57px;
+    margin-bottom: 37px;
+
+    &:hover {
+      background-color: $white;
+      color: $pink;
+    }
+
+    &:active {
+      background-color: $white;
+      color: rgba(209, 41, 87, 0.3);
+    }
+
+    @media (min-width: $tablet-width) {
+      padding: 16px 43px;
+    }
+  }
+
+  &__apps {
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      text-align: start;
+    }
+
+    a {
+      margin-right: 35px;
+    }
+
+    a:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__determine {
     font-weight: 300;
-    font-size: 40px;
-    line-height: 120%;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-weight: 300;
-    font-size: 50px;
-    line-height: 68px;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 30px;
   }
 }
 
-.downloads__app-image {
-  width: 320px;
-  height: 286px;
-  z-index: 2;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-
-.downloads__button {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 18px;
-  border: 3px solid $white;
-  padding: 15px 44px;
-  align-self: flex-start;
-  margin-left: 20px;
-  margin-top: 57px;
-  margin-bottom: 37px;
-
-  &:hover {
-    background-color: $white;
-    color: $pink;
-  }
-
-  &:active {
-    background-color: $white;
-    color: rgba(209, 41, 87, 0.3);
-  }
-
-  @media (min-width: $tablet-width) {
-    padding: 16px 43px;
-  }
-}
-
-.downloads__apps {
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    text-align: start;
-  }
-}
-
-.downloads__apps a {
-  margin-right: 35px;
-}
-
-.downloads__apps a:last-child {
-  margin-right: 0;
-}
-
-.downloads__determine {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 24px;
-  text-align: center;
-  margin-top: 30px;
-}
